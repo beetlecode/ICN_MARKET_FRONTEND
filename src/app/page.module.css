@@ -83,6 +83,10 @@
   position: relative;
   overflow: hidden;
   padding-top: 5rem;
+  background-image: linear-gradient(rgba(11, 13, 18, 0.7), rgba(11, 13, 18, 0.95)), url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .heroContent {
