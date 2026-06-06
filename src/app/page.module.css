@@ -158,7 +158,7 @@
   color: #000;
 }
 
-/* Hero Background Visuals (The Radar/Glow effect) */
+/* Hero Visuals */
 .heroVisuals {
   position: absolute;
   top: 50%;
@@ -209,7 +209,6 @@
   border: 1px solid rgba(0, 183, 255, 0.2);
 }
 
-/* Center Element */
 .centerElement {
   position: absolute;
   top: 65%;
@@ -230,7 +229,6 @@
   filter: drop-shadow(0 0 10px rgba(0, 183, 255, 0.5));
 }
 
-/* Candlesticks Wave */
 .candlesticks {
   position: absolute;
   top: 65%;
@@ -260,7 +258,6 @@
   z-index: -1;
 }
 
-/* Floating Coins */
 .floatingCoin {
   position: absolute;
   width: 60px;
@@ -283,9 +280,14 @@
 .coin3 { top: 40%; right: 25%; transform: rotate(15deg); }
 .coin4 { top: 70%; right: 30%; transform: rotate(-10deg); }
 
-/* SECTIONS */
+/* GENERAL SECTIONS */
 .section {
-  padding: 6rem 0;
+  padding: 8rem 0;
+  position: relative;
+}
+
+.sectionDarker {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .sectionHeader {
@@ -304,10 +306,13 @@
   gap: 2rem;
 }
 
+/* CARDS */
 .card {
   padding: 2.5rem;
   text-align: center;
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .card:hover {
@@ -338,7 +343,211 @@
   line-height: 1.6;
 }
 
+/* ABOUT SECTION */
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.aboutContent h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.aboutContent p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.visionMission {
+  display: flex;
+  gap: 2rem;
+}
+
+.vmBox {
+  border-left: 2px solid var(--accent-blue);
+  padding-left: 1rem;
+}
+
+.vmBox h4 {
+  color: var(--accent-blue);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.vmBox p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* COURSES SECTION */
+.courseCard {
+  text-align: left;
+  padding: 3rem 2.5rem;
+}
+
+.courseBadge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: rgba(0, 183, 255, 0.1);
+  color: var(--accent-blue);
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.courseList {
+  list-style: none;
+  margin: 2rem 0;
+  flex-grow: 1;
+}
+
+.courseItem {
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.coursePrice {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+/* TESTIMONIALS */
+.testimonialCard {
+  text-align: left;
+}
+
+.stars {
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.2rem;
+}
+
+.clientInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 1.5rem;
+}
+
+.clientAvatar {
+  width: 40px;
+  height: 40px;
+  background: var(--accent-blue);
+  border-radius: 50%;
+}
+
+.clientName {
+  font-weight: 600;
+}
+
+.clientRole {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* CONTACT SECTION */
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  background: rgba(0, 183, 255, 0.05);
+}
+
+textarea.input {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* FOOTER */
+.footer {
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding: 4rem 0 2rem;
+  background: rgba(0,0,0,0.6);
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.footerCol h4 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footerLink {
+  color: var(--text-muted);
+}
+
+.footerLink:hover {
+  color: var(--accent-blue);
+}
+
+.footerBottom {
+  text-align: center;
+  color: var(--text-muted);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding-top: 2rem;
+}
+
 /* RESPONSIVE */
+@media (max-width: 992px) {
+  .aboutGrid, .contactGrid { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: 1fr 1fr; }
+  .footerGrid { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 768px) {
   .navLinks { display: none; }
   .heroTitle { font-size: 3rem; }
