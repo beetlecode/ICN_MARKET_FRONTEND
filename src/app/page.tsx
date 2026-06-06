@@ -58,9 +58,9 @@ export default function Home() {
         </div>
 
         <div className={`container ${styles.heroContent}`}>
-          <h1 className={styles.heroTitle}>We Help Beginners, Traders, Pros</h1>
+          <h1 className={styles.heroTitle}>Welcome to ICN Market Education Platform</h1>
           <p className={styles.heroSubtitle}>
-            Track, Analyze, And Improve Your Relationships With Our Easy-To-Use Platform Designed For Individuals And Institutions.
+           Let's start your trading journey to become a professional trader.
           </p>
           <div className={styles.heroButtons}>
             <button className={styles.btnPrimary}>
