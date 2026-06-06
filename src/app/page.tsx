@@ -27,7 +27,7 @@ export default function Home() {
             <Link href="#testimonials" className={styles.navLink}>Testimonials</Link>
             <Link href="#contact" className={styles.navLink}>Contact</Link>
           </div>
-          <button className={styles.btnSignIn}>
+          <button className={styles.btnSignIn} onClick={() => window.location.href = 'https://web.icnmarket.academy/dashboard'}>
             Sign In
             <div className={styles.btnArrow}>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -63,7 +63,7 @@ export default function Home() {
            Let's start your trading journey to become a professional trader.
           </p>
           <div className={styles.heroButtons}>
-            <button className={styles.btnPrimary}>
+            <button className={styles.btnPrimary} onClick={() => window.location.href = 'https://web.icnmarket.academy/dashboard'}>
               Get Started
               <div className={styles.btnArrow}><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
             </button>
@@ -156,7 +156,7 @@ export default function Home() {
               </ul>
               
               <div className={styles.coursePrice}>$100</div>
-              <button className={styles.btnSecondary} style={{width: '100%', justifyContent: 'center'}}>Enroll Now</button>
+              <button className={styles.btnSecondary} style={{width: '100%', justifyContent: 'center'}} onClick={() => window.location.href = 'https://web.icnmarket.academy/dashboard'}>Enroll Now</button>
             </div>
 
             <div className={`glass ${styles.card} ${styles.courseCard}`} style={{borderColor: 'var(--accent-blue)'}}>
@@ -171,7 +171,7 @@ export default function Home() {
               </ul>
               
               <div className={styles.coursePrice}>$400</div>
-              <button className={styles.btnPrimary} style={{width: '100%', justifyContent: 'center'}}>Enroll Now</button>
+              <button className={styles.btnPrimary} style={{width: '100%', justifyContent: 'center'}} onClick={() => window.location.href = 'https://web.icnmarket.academy/dashboard'}>Enroll Now</button>
             </div>
           </div>
         </div>
