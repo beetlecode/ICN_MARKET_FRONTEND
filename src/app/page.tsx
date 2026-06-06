@@ -21,7 +21,7 @@ export default function Home() {
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
           <div className={styles.navLinks}>
-            <Link href="#" className={styles.navLink} style={{color: 'var(--accent-lime)'}}>Home</Link>
+            <Link href="#" className={styles.navLink} style={{color: 'var(--accent-blue)'}}>Home</Link>
             <Link href="#about" className={styles.navLink}>About Us</Link>
             <Link href="#trading" className={styles.navLink}>Trading</Link>
             <Link href="#testimonials" className={styles.navLink}>Testimonials</Link>
@@ -101,7 +101,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ADDITIONAL SECTIONS MATCHING THE LIME GREEN THEME */}
+      {/* ADDITIONAL SECTIONS MATCHING THE THEME */}
       <section id="trading" className={styles.section} style={{background: 'rgba(0,0,0,0.3)', position: 'relative', zIndex: 10}}>
         <div className="container">
           <div className={styles.sectionHeader}>
