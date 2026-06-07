@@ -17,7 +17,7 @@ export default function Home() {
       <nav className={styles.navbar}>
         <div className={styles.navContainer}>
           <div className={styles.logo}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <img src="/logo/logo_dark.jpeg" alt="ICN Market Logo" style={{ height: '40px', width: 'auto', borderRadius: '4px' }} />
           </div>
           <div className={styles.navLinks}>
             <Link href="#" className={styles.navLink} style={{color: 'var(--accent-blue)'}}>Home</Link>
@@ -285,8 +285,8 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className={`container ${styles.footerGrid}`}>
           <div className={styles.footerCol}>
-            <div className={styles.logo} style={{marginBottom: '1.5rem', width: '50px', height: '50px'}}>
-               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <div className={styles.logo} style={{marginBottom: '1.5rem'}}>
+               <img src="/logo/logo_dark.jpeg" alt="ICN Market Logo" style={{ height: '50px', width: 'auto', borderRadius: '4px' }} />
             </div>
             <p className={styles.cardText} style={{maxWidth: '300px'}}>Secure Terminal Connection. Encrypted Market Access.</p>
           </div>
